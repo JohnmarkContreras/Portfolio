@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 body{
     background-color: white;
     margin: 0;
@@ -37,8 +41,7 @@ nav ul li a{
     padding: 6px 7px;
 
 }
-nav ul li a:hover,
-nav ul li a.active {
+nav ul li a:hover {
     color: black;
     background-color: white;
     border-radius: 15px;
@@ -76,16 +79,22 @@ section h1{
     margin-left: 20px;
 }
 .expertise {
-    display: block;
+    display: inline-block;
     justify-content:center;
     align-items: center;
     width: 100%;
     text-align: center;
     min-height: 100vh;
 }
+.expertise img {
+    display: inline-block;
+    padding: 0%;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
 .expertise h1{
     font-size: 3rem;
-    display: inline-block;
 }
 .stack {
     display: inline-block;
@@ -123,9 +132,36 @@ section h1{
     box-shadow:3px 3px 3px 3px gray;
     border-radius: 10px;
     border: 2px solid rgb(186, 183, 183);
+    align-content: center;
+    text-align: center;
+}
+.handler h2{
+    margin-top: 0px;
 }
 .handler:hover{
     box-shadow: 0px 0px 0px 0px;
     border-radius: 0px;
-    transition:0.5s;
+    transition:0.4s;
+}
+header.nav {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-active{
+    background-color:#fff;
+    box-shadow: 5px -1px 12px -5px grey;
+    transition: 0.5s;
+}
+.nav-active a{
+    color: black;
+}
+.nav-active a:hover{
+    cursor: pointer;
+    background-color: rgb(230, 201, 36);
+
+}
+.nav-active #text{
+    color: black;
 }
