@@ -186,3 +186,10 @@ header.nav {
     color: black;
 
 }
+.download{
+    text-align: center;
+}
+.download a{
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(230, 201, 36);
+}
